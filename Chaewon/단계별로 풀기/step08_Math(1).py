@@ -1,32 +1,32 @@
 # 1712
-# A, B, C = map(int,input().split())
-#
-# count = 1
-#
-# if B >= C:
-#     print('-1')
-# else :
-#     print((A // (C-B)) + 1)
+A, B, C = map(int,input().split())
+
+count = 1
+
+if B >= C:
+    print('-1')
+else :
+    print((A // (C-B)) + 1)
 
 # 2292
-# N = int(input())
-#
-# count = 0
-# min_no = 2
-# max_no = 7
-#
-# if N == 1 :
-#     print(1)
-# elif N <= 7 :
-#     print(2)
-# else :
-#     while True :
-#         min_no = min_no + (6*count)
-#         max_no = min_no + (6*(count+1)) -1
-#         count += 1
-#         if (min_no + (6*count)) <= N <= (max_no + (6*(count+1))) :
-#             break
-#     print(count+2)
+N = int(input())
+
+count = 0
+min_no = 2
+max_no = 7
+
+if N == 1 :
+    print(1)
+elif N <= 7 :
+    print(2)
+else :
+    while True :
+        min_no = min_no + (6*count)
+        max_no = min_no + (6*(count+1)) -1
+        count += 1
+        if (min_no + (6*count)) <= N <= (max_no + (6*(count+1))) :
+            break
+    print(count+2)
 
 # 1193
 import sys
